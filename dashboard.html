@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Plant</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include Firebase scripts here -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+    <!-- Your custom script -->
+    <script src="script.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="setting.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+</head>
+
+<body>
+    <div class="background-container"></div>
+    <div class="plant-box">
+        <div class="plant-details">
+            <a class="icon1">
+                <i class="fa-solid fa-trash"></i>
+            </a>
+            <span class="plant-name">Mango</span>
+        </div>
+        <div class="progress">
+            <div class="toggle-btn" id="unact">
+                <div class="inner-circle"></div>
+            </div>
+            <div class="toggle-btn active" id="act">
+                <div class="inner-circle"></div>
+            </div>
+            <div class="cn">
+                <input type="number" id="plant1_soil_moisture" placeholder="Plant 1 Soil Moisture">
+                <button onclick="savePlant1()">Save Plant 1 Moisture</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="plant-box rose">
+        <div class="plant-details">
+            <a class="icon1">
+                <i class="fa-solid fa-trash"></i>
+            </a>
+            <span class="plant-name">Rose</span>
+        </div>
+        <div class="progress">
+            <div class="toggle-btn1" id="unact1">
+                <div class="inner-circle"></div>
+            </div>
+            <div class="toggle-btn1 active" id="act1">
+                <div class="inner-circle"></div>
+            </div>
+            <div class="cn">
+                <input type="number" id="plant2_soil_moisture" placeholder="Plant 2 Soil Moisture">
+<button onclick="savePlant2()">Save Plant 2 Moisture</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+</body>
+
+</html>
